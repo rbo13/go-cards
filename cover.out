@@ -1,0 +1,16 @@
+mode: set
+github.com/whaangbuu/playing-cards/deck.go:15.21,21.33 4 1
+github.com/whaangbuu/playing-cards/deck.go:26.2,26.14 1 1
+github.com/whaangbuu/playing-cards/deck.go:21.33,22.36 1 1
+github.com/whaangbuu/playing-cards/deck.go:22.36,24.4 1 1
+github.com/whaangbuu/playing-cards/deck.go:29.23,30.25 1 0
+github.com/whaangbuu/playing-cards/deck.go:30.25,32.3 1 0
+github.com/whaangbuu/playing-cards/deck.go:35.46,37.2 1 0
+github.com/whaangbuu/playing-cards/deck.go:39.33,41.2 1 0
+github.com/whaangbuu/playing-cards/deck.go:43.49,45.2 1 0
+github.com/whaangbuu/playing-cards/deck.go:47.44,49.16 2 0
+github.com/whaangbuu/playing-cards/deck.go:55.2,56.25 2 0
+github.com/whaangbuu/playing-cards/deck.go:49.16,53.3 3 0
+github.com/whaangbuu/playing-cards/deck.go:59.25,63.19 3 0
+github.com/whaangbuu/playing-cards/deck.go:63.19,66.3 2 0
+github.com/whaangbuu/playing-cards/main.go:3.13,7.2 3 0
