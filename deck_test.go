@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"os"
+	"testing"
+)
 
 func TestNewDeck(t *testing.T) {
 	d := newDeck()
@@ -17,5 +20,31 @@ func TestNewDeck(t *testing.T) {
 	}
 	if d[len(d)-1] != lastCardInDeck {
 		t.Errorf("Expected last item in deck is: %s, but got: %s", lastCardInDeck, d[len(d)-1])
+	}
+}
+
+func TestSaveToDeckAndNewDeckFromFile(t *testing.T) {
+	os.Remove("_decktesting")
+
+	deck := newDeck()
+	requiredLength := 16
+
+	deck.saveToFile("_decktesting")
+	loadedDeck := newDeckFromFile("_decktesting")
+
+	if len(loadedDeck) != requiredLength {
+		t.Errorf("Expected %d, but got: %d", requiredLength, len(loadedDeck))
+	}
+
+	os.Remove("_decktesting")
+}
+
+func TestDeal(t *testing.T) {
+	deck := newDeck()
+
+	remainingSize, handSize := deal(deck, 3)
+
+	if remainingSize == nil {
+		t.Errorf("Expected to have %v and a hand size of: %v, but got %v", remainingSize, handSize, nil)
 	}
 }
